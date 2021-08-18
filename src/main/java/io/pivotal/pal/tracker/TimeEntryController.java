@@ -41,9 +41,7 @@ public class TimeEntryController {
     @GetMapping("/time-entries")
     public ResponseEntity<List<TimeEntry>> list() {
         List<TimeEntry> timeEntries = timeEntryRepository.list();
-        if (timeEntries.isEmpty()) {
-            return new ResponseEntity<>(timeEntries, HttpStatus.NOT_FOUND);
-        }
+
         return new ResponseEntity<>(timeEntries, HttpStatus.OK);
     }
 
