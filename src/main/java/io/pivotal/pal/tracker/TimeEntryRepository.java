@@ -1,9 +1,10 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-@Repository
+@Configuration
 public interface TimeEntryRepository {
     TimeEntry create(TimeEntry timeEntry);
     TimeEntry find(long id);
