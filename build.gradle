@@ -25,3 +25,11 @@ test.environment([
         "WELCOME_MESSAGE": "Hello from test",
 ])
 
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+
